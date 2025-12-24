@@ -1,11 +1,6 @@
 [
 	{
 		"service": "urn:dslforum-org:service:DeviceConfig:1",
-		"action": "ConfigurationFinished",
-		"result": "A_ARG_TYPE_Status"
-	},
-	{
-		"service": "urn:dslforum-org:service:DeviceConfig:1",
 		"action": "GetPersistentData",
 		"result": "PersistentData"
 	},
@@ -1071,11 +1066,6 @@
 	},
 	{
 		"service": "urn:dslforum-org:service:WLANConfiguration:1",
-		"action": "GetDefaultWEPKeyIndex",
-		"result": "WEPKeyIndex"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:1",
 		"action": "GetInfo",
 		"result": "Enable"
 	},
@@ -1393,51 +1383,6 @@
 		"service": "urn:dslforum-org:service:WLANConfiguration:1",
 		"action": "X_AVM-DE_GetWLANExtInfo",
 		"result": "X_AVM-DE_LastChangedStamp"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:1",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "Enable"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:1",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "BeaconType"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:1",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "KeyPassphrase"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:1",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "SSID"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:1",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "BSSID"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:1",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "TrafficMode"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:1",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "ManualSpeed"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:1",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "MaxSpeedDS"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:1",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "MaxSpeedUS"
 	},
 	{
 		"service": "urn:dslforum-org:service:WLANConfiguration:1",
@@ -1501,11 +1446,6 @@
 	},
 	{
 		"service": "urn:dslforum-org:service:WLANConfiguration:2",
-		"action": "GetDefaultWEPKeyIndex",
-		"result": "WEPKeyIndex"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:2",
 		"action": "GetInfo",
 		"result": "Enable"
 	},
@@ -1823,51 +1763,6 @@
 		"service": "urn:dslforum-org:service:WLANConfiguration:2",
 		"action": "X_AVM-DE_GetWLANExtInfo",
 		"result": "X_AVM-DE_LastChangedStamp"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:2",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "Enable"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:2",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "BeaconType"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:2",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "KeyPassphrase"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:2",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "SSID"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:2",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "BSSID"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:2",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "TrafficMode"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:2",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "ManualSpeed"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:2",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "MaxSpeedDS"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:2",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "MaxSpeedUS"
 	},
 	{
 		"service": "urn:dslforum-org:service:WLANConfiguration:2",
@@ -1931,11 +1826,6 @@
 	},
 	{
 		"service": "urn:dslforum-org:service:WLANConfiguration:3",
-		"action": "GetDefaultWEPKeyIndex",
-		"result": "WEPKeyIndex"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:3",
 		"action": "GetInfo",
 		"result": "Enable"
 	},
@@ -2253,51 +2143,6 @@
 		"service": "urn:dslforum-org:service:WLANConfiguration:3",
 		"action": "X_AVM-DE_GetWLANExtInfo",
 		"result": "X_AVM-DE_LastChangedStamp"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:3",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "Enable"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:3",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "BeaconType"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:3",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "KeyPassphrase"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:3",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "SSID"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:3",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "BSSID"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:3",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "TrafficMode"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:3",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "ManualSpeed"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:3",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "MaxSpeedDS"
-	},
-	{
-		"service": "urn:dslforum-org:service:WLANConfiguration:3",
-		"action": "X_AVM-DE_GetWLANHybridMode",
-		"result": "MaxSpeedUS"
 	},
 	{
 		"service": "urn:dslforum-org:service:WLANConfiguration:3",
