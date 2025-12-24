@@ -304,6 +304,8 @@ func (fc *FritzboxCollector) reportMetric(ch chan<- prometheus.Metric, m *Metric
 		floatval = tval
 	case uint64:
 		floatval = float64(tval)
+	case int64:
+		floatval = float64(tval)
 	case bool:
 		if tval {
 			floatval = 1
