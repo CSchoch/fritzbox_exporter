@@ -319,7 +319,7 @@ func (fc *FritzboxCollector) reportMetric(ch chan<- prometheus.Metric, m *Metric
 			floatval = 0
 		}
 	default:
-		logrus.Warnf("unknown type: %s", val)
+		logrus.Warnf("unknown type: %T (value: %v) for metric %s.%s.%s", tval, val, m.Service, m.Action, m.Result)
 		collectErrors.Inc()
 		return
 	}
