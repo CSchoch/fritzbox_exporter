@@ -144,6 +144,51 @@
             },
             "promType": "GaugeValue",
             "cacheEntryTTL": 300
+        },
+        {
+            "path": "data.lua",
+            "params": "page=fiberFiber",
+            "resultPath": "data.sfpProperties.0",
+            "resultKey": "val",
+            "promDesc": {
+                "fqName": "gateway_fiber_sfp_temperature_celsius",
+                "help": "SFP module internal temperature in Celsius",
+                "varLabels": [
+                    "gateway"
+                ]
+            },
+            "promType": "GaugeValue",
+            "cacheEntryTTL": 60
+        },
+        {
+            "path": "data.lua",
+            "params": "page=fiberFiber",
+            "resultPath": "data.sfpProperties.3",
+            "resultKey": "val",
+            "promDesc": {
+                "fqName": "gateway_fiber_sfp_tx_power_dbm",
+                "help": "SFP module transmit power in dBm",
+                "varLabels": [
+                    "gateway"
+                ]
+            },
+            "promType": "GaugeValue",
+            "cacheEntryTTL": 60
+        },
+        {
+            "path": "data.lua",
+            "params": "page=fiberFiber",
+            "resultPath": "data.sfpProperties.4",
+            "resultKey": "val",
+            "promDesc": {
+                "fqName": "gateway_fiber_sfp_rx_power_dbm",
+                "help": "SFP module receive power in dBm",
+                "varLabels": [
+                    "gateway"
+                ]
+            },
+            "promType": "GaugeValue",
+            "cacheEntryTTL": 60
         }
     ]
 }
