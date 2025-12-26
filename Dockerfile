@@ -2,12 +2,24 @@
 
 # Build Image
 FROM golang:1.25.4-alpine3.22 AS builder
-RUN go install github.com/CSchoch/fritzbox_exporter@latest \
+
+WORKDIR /build
+
+# Copy go mod files
+COPY go.mod go.sum ./
+RUN go mod download
+
+# Copy source code
+COPY . .
+
+# Build the application
+RUN go build -o fritzbox_exporter . \
     && mkdir /app \
-    && mv /go/bin/fritzbox_exporter /app
+    && mv fritzbox_exporter /app
 
 WORKDIR /app
 
+# Copy metrics configuration files
 COPY metrics.json metrics-lua.json /app/
 
 # Runtime Image
