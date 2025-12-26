@@ -2,7 +2,7 @@
 
 # Build Image
 FROM golang:1.25.4-alpine3.22 AS builder
-RUN go install github.com/sberk42/fritzbox_exporter@latest \
+RUN go install github.com/CSchoch/fritzbox_exporter@latest \
     && mkdir /app \
     && mv /go/bin/fritzbox_exporter /app
 
@@ -13,7 +13,7 @@ COPY metrics.json metrics-lua.json /app/
 # Runtime Image
 FROM alpine:3.22 as runtime-image
 
-ARG REPO=sberk42/fritzbox_exporter
+ARG REPO=CSchoch/fritzbox_exporter
 
 LABEL org.opencontainers.image.source https://github.com/${REPO}
 

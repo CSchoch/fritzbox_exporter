@@ -233,116 +233,6 @@
 		"cacheEntryTTL": 60
 	},
 	{
-		"service": "urn:dslforum-org:service:X_AVM-DE_WANFiber:1",
-		"action": "GetInfo",
-		"result": "OpticalSignalLevel",
-		"promDesc": {
-			"fqName": "gateway_fiber_optical_signal_level",
-			"help": "Fiber optical signal level (dBm * 100)",
-			"varLabels": [
-				"gateway"
-			],
-			"fixedLabels": {
-				"direction": "Receive",
-				"interface": "Fiber"
-			}
-		},
-		"promType": "GaugeValue"
-	},
-	{
-		"service": "urn:dslforum-org:service:X_AVM-DE_WANFiber:1",
-		"action": "GetInfo",
-		"result": "TransmitOpticalLevel",
-		"promDesc": {
-			"fqName": "gateway_fiber_optical_signal_level",
-			"help": "Fiber optical signal level (dBm * 100)",
-			"varLabels": [
-				"gateway"
-			],
-			"fixedLabels": {
-				"direction": "Transmit",
-				"interface": "Fiber"
-			}
-		},
-		"promType": "GaugeValue"
-	},
-	{
-		"service": "urn:dslforum-org:service:X_AVM-DE_WANFiber:1",
-		"action": "GetInfo",
-		"result": "LowerOpticalThreshold",
-		"promDesc": {
-			"fqName": "gateway_fiber_optical_threshold",
-			"help": "Fiber optical threshold (dBm * 100)",
-			"varLabels": [
-				"gateway"
-			],
-			"fixedLabels": {
-				"direction": "Receive",
-				"threshold": "Lower",
-				"interface": "Fiber"
-			}
-		},
-		"promType": "GaugeValue",
-		"cacheEntryTTL": 300
-	},
-	{
-		"service": "urn:dslforum-org:service:X_AVM-DE_WANFiber:1",
-		"action": "GetInfo",
-		"result": "UpperOpticalThreshold",
-		"promDesc": {
-			"fqName": "gateway_fiber_optical_threshold",
-			"help": "Fiber optical threshold (dBm * 100)",
-			"varLabels": [
-				"gateway"
-			],
-			"fixedLabels": {
-				"direction": "Receive",
-				"threshold": "Upper",
-				"interface": "Fiber"
-			}
-		},
-		"promType": "GaugeValue",
-		"cacheEntryTTL": 300
-	},
-	{
-		"service": "urn:dslforum-org:service:X_AVM-DE_WANFiber:1",
-		"action": "GetInfo",
-		"result": "LowerTransmitPowerThreshold",
-		"promDesc": {
-			"fqName": "gateway_fiber_optical_threshold",
-			"help": "Fiber optical threshold (dBm * 100)",
-			"varLabels": [
-				"gateway"
-			],
-			"fixedLabels": {
-				"direction": "Transmit",
-				"threshold": "Lower",
-				"interface": "Fiber"
-			}
-		},
-		"promType": "GaugeValue",
-		"cacheEntryTTL": 300
-	},
-	{
-		"service": "urn:dslforum-org:service:X_AVM-DE_WANFiber:1",
-		"action": "GetInfo",
-		"result": "UpperTransmitPowerThreshold",
-		"promDesc": {
-			"fqName": "gateway_fiber_optical_threshold",
-			"help": "Fiber optical threshold (dBm * 100)",
-			"varLabels": [
-				"gateway"
-			],
-			"fixedLabels": {
-				"direction": "Transmit",
-				"threshold": "Upper",
-				"interface": "Fiber"
-			}
-		},
-		"promType": "GaugeValue",
-		"cacheEntryTTL": 300
-	},
-	{
 		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
 		"action": "GetStatusInfo",
 		"result": "ConnectionStatus",
@@ -802,23 +692,6 @@
 	{
 		"service": "urn:dslforum-org:service:X_AVM-DE_WANFiber:1",
 		"action": "GetStatistics",
-		"result": "ConnectionRateDown",
-		"promDesc": {
-			"fqName": "gateway_fiber_connection_rate",
-			"help": "Fiber connection rate (bit/s)",
-			"varLabels": [
-				"gateway"
-			],
-			"fixedLabels": {
-				"direction": "Down",
-				"interface": "Fiber"
-			}
-		},
-		"promType": "GaugeValue"
-	},
-	{
-		"service": "urn:dslforum-org:service:X_AVM-DE_WANFiber:1",
-		"action": "GetStatistics",
 		"result": "ConnectionRateUp",
 		"promDesc": {
 			"fqName": "gateway_fiber_connection_rate",
@@ -836,42 +709,10 @@
 	{
 		"service": "urn:dslforum-org:service:X_AVM-DE_WANFiber:1",
 		"action": "GetStatistics",
-		"result": "BestTrainState",
-		"promDesc": {
-			"fqName": "gateway_fiber_train_state",
-			"help": "Fiber training state",
-			"varLabels": [
-				"gateway"
-			],
-			"fixedLabels": {
-				"interface": "Fiber"
-			}
-		},
-		"promType": "GaugeValue"
-	},
-	{
-		"service": "urn:dslforum-org:service:X_AVM-DE_WANFiber:1",
-		"action": "GetStatistics",
 		"result": "Resyncs",
 		"promDesc": {
 			"fqName": "gateway_fiber_resyncs",
 			"help": "Fiber connection resyncs",
-			"varLabels": [
-				"gateway"
-			],
-			"fixedLabels": {
-				"interface": "Fiber"
-			}
-		},
-		"promType": "CounterValue"
-	},
-	{
-		"service": "urn:dslforum-org:service:X_AVM-DE_WANFiber:1",
-		"action": "GetStatistics",
-		"result": "MinutesInShowtime",
-		"promDesc": {
-			"fqName": "gateway_fiber_showtime_minutes",
-			"help": "Fiber minutes in showtime",
 			"varLabels": [
 				"gateway"
 			],
