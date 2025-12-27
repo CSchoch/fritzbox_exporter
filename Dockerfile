@@ -2,30 +2,18 @@
 
 # Build Image
 FROM golang:1.25.4-alpine3.22 AS builder
-
-WORKDIR /build
-
-# Copy go mod files
-COPY go.mod go.sum ./
-RUN go mod download
-
-# Copy source code
-COPY . .
-
-# Build the application
-RUN go build -o fritzbox_exporter . \
+RUN go install github.com/sberk42/fritzbox_exporter@latest \
     && mkdir /app \
-    && mv fritzbox_exporter /app
+    && mv /go/bin/fritzbox_exporter /app
 
 WORKDIR /app
 
-# Copy metrics configuration files
 COPY metrics.json metrics-lua.json /app/
 
 # Runtime Image
 FROM alpine:3.22 as runtime-image
 
-ARG REPO=CSchoch/fritzbox_exporter
+ARG REPO=sberk42/fritzbox_exporter
 
 LABEL org.opencontainers.image.source https://github.com/${REPO}
 
